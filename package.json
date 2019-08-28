@@ -1,0 +1,35 @@
+{
+  "name": "page_designer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node logoUpload.local.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.507.0",
+    "aws-serverless-express": "^3.3.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "bluebird": "^3.5.5",
+    "bootstrap": "^3.4.1",
+    "bootstrap-colorpicker": "^3.1.2",
+    "browserslist": "^4.6.6",
+    "express": "^4.17.1",
+    "file-type": "^12.1.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.1",
+    "multiparty": "^4.2.1",
+    "popper.js": "^1.15.0",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dom": "^16.9.0",
+    "react-scripts": "^3.0.1",
+    "sortablejs": "^1.10.0-rc3",
+    "typescript": "^3.5.3"
+  }
+}

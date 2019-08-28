@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Bootstra Core CSS -->
+    <!-- Colorpicker CSS -->
+    <link href="bootstrap-colorpicker-2.5.2/dist/css/bootstrap-colorpicker.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Page Designer Tool</title>
+  </head>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="15" class="app">
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="myScrollspy" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          <div class="sidebar-sticky">
+            <div class="sidebar-inner">
+              <ul class="nav flex-column nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+                <li class="nav-item active p-1">
+                  <a href="#giving-options" default>
+                    <span class="title">Giving options</span>
+                  </a>
+                </li>
+                <li class="nav-item p-1">
+                  <a href="#logo">
+                    <span class="title">Logo</span>
+                  </a>
+                </li>
+                <li class="nav-item p-1">
+                  <a href="#label">
+                    <span class="title">Label</span>
+                  </a>
+                </li>
+                <li class="nav-item p-1">
+                  <a href="#colors">
+                    <span class="title">Colors</span>
+                  </a>
+                </li>
+                <li class="nav-item p-1">
+                  <a href="#layout">
+                    <span class="title">Layout</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+          <div class="containter col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <main>
+              <div class="content-container col-md-8">
+                <h2>Page Setting</h2>
+                <div id="giving-options" class="giving-options">
+                  <h3>Giving Options</h3>
+                  <div class="apperance">
+                    <h4>Apperance</h4>
+                    <span class="help-block" id="helpBlock">Choose which funds are visible on the page</span>
+                    <div class="multi-selection-fund">
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckbox1" value="option1">Option 1
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckbox2" value="option2">Option 2
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckbox3" value="option3">Option 3
+                        </label>
+                    </div>
+                  </div>
+                  <br> <!--can't be put in JSX---->
+                <!-- end of apperance -->
+
+                  <div class="ordering">
+                    <h4>Ordering</h4>
+                    <span class="help-block" id="helpBlock">Choose which order the funds are displayed on the page</span>
+                      <div id="simpleList" class="list-group">
+                        <div class="list-group-item" id="orderingOption1">Option 1</div>
+                        <div class="list-group-item" id="orderingOption2">Option 2</div>
+                        <div class="list-group-item" id="orderingOption3">Option 3</div>
+                      </div>
+                  </div>
+                  <br>
+                <!-- end of ordering -->
+
+                  <div class="frequency">
+                    <h4>Frequency</h4>
+                    <span class="help-block" id="helpBlock">Choose which frequency option are available to the user</span>
+                    <div class="multi-selection-frequency">
+                      <label class="checkbox-inline" for="fund-selection">
+                        <input type="checkbox" id="inlineCheckbox1" name="" value="option1">Option 1
+                      </label>
+                      <label class="checkbox-inline" for="fund-selection">
+                        <input type="checkbox" id="inlineCheckbox2" name="" value="option2">Option 2
+                      </label>
+                      <label class="checkbox-inline" for="fund-selection">
+                        <input type="checkbox" id="inlineCheckbox3" name="" value="option3">Option 3
+                      </label>
+
+
+                      <div class="frequency-option">
+                        <h4>Frequency Options</h4>
+                        <div class="multi-selection-frequency-option">
+                          <label class="checkbox-inline" for="fund-selection">
+                            <input type="checkbox" id="inlineCheckbox1" name="">Monday
+                          </label>
+                          <label class="checkbox-inline" for="fund-selection">
+                            <input type="checkbox" id="inlineCheckbox2" name="">Tuesday
+                          </label>
+                          <label class="checkbox-inline" for="fund-selection">
+                            <input type="checkbox" id="inlineCheckbox3" name="">Wednesday
+                          </label>
+                          <br>
+                          <label class="checkbox-inline" for="fund-selection">
+                            <input type="checkbox" id="inlineCheckbox4" name="">Thursday
+                          </label>
+                          <label class="checkbox-inline" for="fund-selection">
+                            <input type="checkbox" id="inlineCheckbox5" name="">Friday
+                          </label>
+                          <label class="checkbox-inline" for="fund-selection">
+                            <input type="checkbox" id="inlineCheckbox6" name="">Saturday
+                          </label>
+                          <br>
+                          <label class="checkbox-inline" for="fund-selection">
+                            <input type="checkbox" id="inlineCheckbox7" name="">Sunday
+                          </label>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <!-- end of frequency -->
+                </div>
+                <!-- end of giving options -->
+              </div>
+              <hr>
+
+
+              <div id="logo" class="logo">
+                  <h3>Logo</h3>
+                  <span class="help-block" id="helpBlock">Choose page logo</span><br>
+                  <div class="logo-options">
+                      <label class="radio-inline">
+                        <input type="radio" id="inlineRadio1" name="inlineRadioOptions" value="option1">
+                        <img src="church1.jpg" alt="">
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" id="inlineRadio2" name="inlineRadioOptions" value="option2">
+                        <img src="church2.jpg" alt="">
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" id="inlineRadio3" name="inlineRadioOptions" value="option3">
+                        <img src="church3.png" alt="">
+                      </label>
+                    <div class="logo-upload form-group row">
+                      <div class="col-sm-10">
+                        <button name="button" class="btn btn-primary" type="submit">Upload a new logo</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <hr>
+                <!-- end of logo -->
+
+              <div id="labels" class="labels">
+                  <h3>Label</h3>
+                  <div class="label-page">
+                    <h4>Page Title</h4>
+                    <span class="help-block" id="helpBlock">This changes the title of the tab</span>
+                    <form class="form-inline">
+                      <div class="form-group md-2">
+                        <label class="sr-only" for="panel-title-name">Page Title</label>
+                        <input type="text" class="form-control" id="inputHelpBlock" placeholder="Page title">
+                      </div>
+                        <button type="submit" class="btn btn-primary mb-2" name="button">Save</button>
+                    </form>
+                  </div>
+                  <br>
+
+                  <div class="label-panel">
+                    <h4>Panel Title</h4>
+                    <span class="help-block" id="helpBlock">This changes the title at the top of the page</span>
+                    <form class="form-inline">
+                      <div class="form-group md-2">
+                        <input type="text" class="form-control" id="inputHelpBlock" placeholder="Panel title">
+                      </div>
+                      <button type="submit" class="btn btn-primary" name="button">Save</button>
+                    </form>
+                  </div>
+                  <br>
+
+                  <div class="selection">
+                    <h4>Selection Title</h4>
+                    <span class="help-block" id="helpBlock">This is the label applied above the fund select dropdown menu</span>
+                    <form class="form-inline">
+                      <div class="form-group md-2">
+                        <input type="text" class="form-control" id="inputHelpBlock" placeholder="Selection title">
+                      </div>
+                      <button type="submit" class="btn btn-primary" name="button">Save</button>
+                    </form>
+                  </div>
+                  <br>
+
+                  <div class="additional-text">
+                    <h4>Additional Text</h4>
+                    <span class="help-block" id="helpBlock">Additional Text below the fund selection</span>
+                    <div class="form-group md-2">
+                      <textarea class="form-control" name="addtional-text" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary" name="button">Save</button>
+                    </div>
+                  </div>
+              </div>
+              <hr>
+                <!-- end of label-->
+
+                <div id="colors" class="colors">
+                  <h4>Colors</h4>
+                  <span class="help-block" id="helpBlock">Change the color of the page</span>
+                  <div class="background-color">
+                    <h5>Background</h5>
+                    <div id="cp1" class="input-group colorpicker-component">
+                      <input type="text" class="form-control" value="#00AABB"/>
+                      <span class="input-group-addon"><i></i></span>
+                    </div>
+                  </div>
+                  <div class="header-color">
+                    <h5>Header</h5>
+                      <div id="cp2" class="input-group colorpicker-component">
+                        <input type="text" class="form-control" value="#00AABB"/>
+                        <span class="input-group-addon"><i></i></span>
+                      </div>
+                  </div>
+                  <div class="selection-button-color">
+                    <h5>Selection button</h5>
+                    <div id="cp3" class="input-group colorpicker-component">
+                      <input type="text" class="form-control" value="#00AABB"/>
+                      <span class="input-group-addon"><i></i></span>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <!-- end of colors -->
+
+                <div id="layout" class="layout">
+                  <h4>Layout</h4>
+                  <span class="help-block" id="helpBlock">Choose the page layout</span>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" id="optionsRadios1" name="optionsRadios" value="option1" checked="true">
+                      Option 1
+                    </label>
+                    <!-- cant change the id and the name or it will mess up the setting -->
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" id="optionsRadios2" name="optionsRadios" value="option2" >
+                      Option 2
+                    </label>
+                    <!-- cant change the id and the name or it will mess up the setting -->
+                  </div>
+                </div>
+            </main>
+          </div>
+
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/react@16.8.4/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.development.js"></script>
+      <!-- Latest Sortable -->
+      <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+      <script src="bootstrap-colorpicker-2.5.2/dist/js/bootstrap-colorpicker.js"></script>
+      <script src="js/script.js"></script>
+
+
+  </body>
+</html>
