@@ -8,9 +8,9 @@ import Dropzone from "./Dropzone";
 require("dotenv").config(); //need this
 
 let base64 = require("base-64");
-let url = "https://test-api.mobileaxept.com/micro_service/page-properties";
-let username = "spencer.grimes@mobileaxept.com";
-let password = "Temp654321";
+let url = "https:"; //replace your url here
+let username = "";//replace your user name
+let password = ""; //replace your password
 let headers = {
     Authorization: "Basic " + base64.encode(username + ":" + password),
     "Content-Type": "application/json"
@@ -18,9 +18,9 @@ let headers = {
 
 var AWS = require("aws-sdk");
 AWS.config.update({
-    accessKeyId: "AKIAXKCRRSD3GJHJE65C",
-    secretAccessKey: "0lBmJkb6hl885URDMhm+llobNp8WeYLjftjmiy02",
-    region: "us-west-2"
+    accessKeyId: "", //replace access keyID
+    secretAccessKey: "", //replace secretAccessKey
+    region: "" //replace region
 });
 const s3 = new AWS.S3();
 
